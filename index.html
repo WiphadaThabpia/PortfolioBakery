@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Wiphada Thabpia | Portfolio</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+
+      font-family:
+        Arial,
+        "Segoe UI",
+        sans-serif;
+
+      background: #ffffff;
+
+      color: #334e68;
+
+      line-height: 1.7;
+
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    nav {
+
+      position: fixed;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+
+      height: 70px;
+
+      background: rgba(
+        255,
+        255,
+        255,
+        0.95
+      );
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      padding: 0 8%;
+
+      box-shadow:
+        0 2px 12px
+        rgba(90, 150, 190, 0.12);
+
+      z-index: 100;
+
+    }
+
+
+    .logo {
+
+      font-size: 22px;
+
+      font-weight: bold;
+
+      color: #6daedb;
+
+    }
+
+
+    .nav-links {
+
+      display: flex;
+
+      gap: 30px;
+
+    }
+
+
+    .nav-links a {
+
+      text-decoration: none;
+
+      color: #486581;
+
+      font-size: 15px;
+
+      font-weight: 600;
+
+      transition: 0.3s;
+
+    }
+
+
+    .nav-links a:hover {
+
+      color: #5da9dc;
+
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+
+      min-height: 100vh;
+
+      padding:
+        120px 8% 70px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background:
+
+        linear-gradient(
+          135deg,
+          #ffffff 45%,
+          #eaf6ff 100%
+        );
+
+    }
+
+
+    .hero-content {
+
+      width: 100%;
+
+      max-width: 1050px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 70px;
+
+      align-items: center;
+
+    }
+
+
+    .hero-text {
+
+      text-align: left;
+
+    }
+
+
+    .hello {
+
+      color: #67a9d5;
+
+      font-size: 20px;
+
+      font-weight: bold;
+
+      margin-bottom: 10px;
+
+    }
+
+
+    .hero h1 {
+
+      font-size: 58px;
+
+      line-height: 1.15;
+
+      color: #294b63;
+
+      margin-bottom: 18px;
+
+    }
+
+
+    .hero h1 span {
+
+      color: #69addb;
+
+    }
+
+
+    .hero h2 {
+
+      font-size: 23px;
+
+      font-weight: 500;
+
+      color: #607d94;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .hero p {
+
+      max-width: 570px;
+
+      color: #607d8b;
+
+      font-size: 16px;
+
+      line-height: 1.9;
+
+    }
+
+
+    .hero-buttons {
+
+      margin-top: 30px;
+
+      display: flex;
+
+      gap: 15px;
+
+      flex-wrap: wrap;
+
+    }
+
+
+    .button {
+
+      display: inline-block;
+
+      padding:
+        11px 24px;
+
+      border-radius: 25px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      transition: 0.3s;
+
+    }
+
+
+    .button-blue {
+
+      background: #78b9df;
+
+      color: white;
+
+    }
+
+
+    .button-blue:hover {
+
+      background: #5da5d2;
+
+      transform:
+        translateY(-2px);
+
+    }
+
+
+    .button-white {
+
+      background: white;
+
+      color: #5799c5;
+
+      border:
+        1px solid #a9d4ed;
+
+    }
+
+
+    .button-white:hover {
+
+      background: #eef8ff;
+
+    }
+
+
+    /* =========================
+       HERO CARD
+    ========================= */
+
+    .hero-card {
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .profile-card {
+
+      width: 330px;
+
+      padding: 35px;
+
+      background: white;
+
+      border-radius: 25px;
+
+      text-align: center;
+
+      box-shadow:
+        0 15px 40px
+        rgba(80, 150, 190, 0.15);
+
+      border:
+        1px solid #e0f1fb;
+
+    }
+
+
+    .profile-circle {
+
+      width: 150px;
+
+      height: 150px;
+
+      margin:
+        0 auto 25px;
+
+      border-radius: 50%;
+
+      background:
+
+        linear-gradient(
+          135deg,
+          #dff3ff,
+          #a9d8f2
+        );
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 55px;
+
+    }
+
+
+    .profile-card h3 {
+
+      color: #365b73;
+
+      margin-bottom: 8px;
+
+    }
+
+
+    .profile-card p {
+
+      color: #7b95a5;
+
+      font-size: 14px;
+
+    }
+
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+
+      padding:
+        90px 8%;
+
+    }
+
+
+    .section-title {
+
+      text-align: center;
+
+      margin-bottom: 50px;
+
+    }
+
+
+    .section-title h2 {
+
+      font-size: 36px;
+
+      color: #365b73;
+
+      margin-bottom: 8px;
+
+    }
+
+
+    .section-title p {
+
+      color: #7c98aa;
+
+    }
+
+
+    .section-title::after {
+
+      content: "";
+
+      display: block;
+
+      width: 55px;
+
+      height: 3px;
+
+      background: #8bc7e8;
+
+      margin:
+        15px auto 0;
+
+      border-radius: 10px;
+
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-section {
+
+      background: #f7fcff;
+
+    }
+
+
+    .about-container {
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 30px;
+
+    }
+
+
+    .about-box {
+
+      background: white;
+
+      padding: 30px;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 8px 25px
+        rgba(80, 150, 190, 0.08);
+
+      border-left:
+        4px solid #a9d8f2;
+
+    }
+
+
+    .about-box h3 {
+
+      color: #5c9bc5;
+
+      margin-bottom: 18px;
+
+    }
+
+
+    .info-row {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 15px;
+
+      padding: 7px 0;
+
+      border-bottom:
+        1px solid #edf5f9;
+
+    }
+
+
+    .info-row:last-child {
+
+      border-bottom: none;
+
+    }
+
+
+    .info-label {
+
+      font-weight: bold;
+
+      color: #527187;
+
+    }
+
+
+    .info-value {
+
+      color: #718999;
+
+      text-align: right;
+
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-container {
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 30px;
+
+    }
+
+
+    .skill-box {
+
+      padding: 35px;
+
+      background: white;
+
+      border-radius: 20px;
+
+      box-shadow:
+        0 8px 25px
+        rgba(80, 150, 190, 0.1);
+
+      border:
+        1px solid #e4f3fb;
+
+    }
+
+
+    .skill-box h3 {
+
+      color: #5799c5;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    .skill-list {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+    }
+
+
+    .skill {
+
+      padding:
+        9px 17px;
+
+      background: #edf8ff;
+
+      color: #4e87ab;
+
+      border-radius: 20px;
+
+      font-size: 14px;
+
+      font-weight: 600;
+
+    }
+
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects-section {
+
+      background: #f7fcff;
+
+    }
+
+
+    .projects {
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 30px;
+
+    }
+
+
+    .project-card {
+
+      background: white;
+
+      border-radius: 20px;
+
+      padding: 32px;
+
+      box-shadow:
+        0 8px 25px
+        rgba(80, 150, 190, 0.1);
+
+      transition: 0.3s;
+
+    }
+
+
+    .project-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      box-shadow:
+        0 15px 30px
+        rgba(80, 150, 190, 0.15);
+
+    }
+
+
+    .project-number {
+
+      width: 45px;
+
+      height: 45px;
+
+      border-radius: 12px;
+
+      background: #e2f4ff;
+
+      color: #5da1cb;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-weight: bold;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .project-card h3 {
+
+      color: #365b73;
+
+      margin-bottom: 12px;
+
+    }
+
+
+    .project-card p {
+
+      color: #718999;
+
+      font-size: 14px;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .project-link {
+
+      color: #579dcc;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      font-size: 14px;
+
+      word-break: break-all;
+
+    }
+
+
+    .project-link:hover {
+
+      color: #367fae;
+
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+
+      text-align: center;
+
+    }
+
+
+    .contact-card {
+
+      max-width: 700px;
+
+      margin: auto;
+
+      padding: 40px;
+
+      background:
+
+        linear-gradient(
+          135deg,
+          #eaf7ff,
+          #f8fcff
+        );
+
+      border-radius: 25px;
+
+    }
+
+
+    .contact-item {
+
+      margin: 12px 0;
+
+      color: #607d8b;
+
+    }
+
+
+    .contact-item strong {
+
+      color: #45677d;
+
+    }
+
+
+    /* =========================
+       BACK TO BAKERY
+    ========================= */
+
+    .bakery-button {
+
+      margin-top: 25px;
+
+      display: inline-block;
+
+      padding:
+        12px 25px;
+
+      background: #75b7dd;
+
+      color: white;
+
+      border-radius: 25px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      transition: 0.3s;
+
+    }
+
+
+    .bakery-button:hover {
+
+      background: #579fcb;
+
+      transform:
+        translateY(-2px);
+
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+      padding: 25px;
+
+      text-align: center;
+
+      background: #e9f6fd;
+
+      color: #66869a;
+
+      font-size: 14px;
+
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 750px) {
+
+      .nav-links {
+
+        display: none;
+
+      }
+
+
+      .hero-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+      }
+
+
+      .hero-text {
+
+        text-align: center;
+
+      }
+
+
+      .hero h1 {
+
+        font-size: 42px;
+
+      }
+
+
+      .hero p {
+
+        margin: auto;
+
+      }
+
+
+      .hero-buttons {
+
+        justify-content: center;
+
+      }
+
+
+      .about-container,
+      .skills-container,
+      .projects {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .profile-card {
+
+        width: 280px;
+
+      }
+
+
+      .info-row {
+
+        flex-direction: column;
+
+        gap: 2px;
+
+      }
+
+
+      .info-value {
+
+        text-align: left;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       NAVBAR
+  ========================= -->
+
+  <nav>
+
+    <div class="logo">
+      Wiphada
+    </div>
+
+
+    <div class="nav-links">
+
+      <a href="#about">
+        About Me
+      </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+
+      <div class="hero-text">
+
+        <div class="hello">
+          Hi, I'm
+        </div>
+
+
+        <h1>
+          Wiphada
+          <span>Thabpia</span>
+        </h1>
+
+
+        <h2>
+          Computer Science Student
+        </h2>
+
+
+        <p>
+
+          I'm a student at Kasetsart University,
+          Kamphaeng Saen Campus, studying
+          Computer Science in the Faculty of
+          Liberal Arts and Sciences.
+
+          <br><br>
+
+          This project is for my
+          Interactive Computer Graphics course.
+          My design is based on things I enjoy
+          eating in my daily life, and I hope to
+          complete the assignment given by my
+          professor.
+
+          <br><br>
+
+          Thank you for visiting!
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a
+            href="#projects"
+            class="button button-blue">
+
+            My Projects
+
+          </a>
+
+
+          <a
+            href="#contact"
+            class="button button-white">
+
+            Contact Me
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="hero-card">
+
+        <div class="profile-card">
+
+          <div class="profile-circle">
+            👩🏻‍💻
+          </div>
+
+
+          <h3>
+            วิภาดา ทับเปีย
+          </h3>
+
+
+          <p>
+            Computer Science
+            <br>
+            Kasetsart University
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       ABOUT ME
+  ========================= -->
+
+  <section
+    id="about"
+    class="about-section">
+
+
+    <div class="section-title">
+
+      <h2>
+        About Me
+      </h2>
+
+      <p>
+        ข้อมูลเกี่ยวกับฉัน
+      </p>
+
+    </div>
+
+
+    <div class="about-container">
+
+
+      <div class="about-box">
+
+        <h3>
+          Personal Information
+        </h3>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            ชื่อ-นามสกุล
+          </span>
+
+          <span class="info-value">
+            วิภาดา ทับเปีย
+          </span>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            Student ID
+          </span>
+
+          <span class="info-value">
+            6721601460
+          </span>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            อายุ
+          </span>
+
+          <span class="info-value">
+            20 ปี
+          </span>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            หมู่
+          </span>
+
+          <span class="info-value">
+            700
+          </span>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            ชั้นปี
+          </span>
+
+          <span class="info-value">
+            ปีที่ 3
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="about-box">
+
+        <h3>
+          Education
+        </h3>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            มหาวิทยาลัย
+          </span>
+
+          <span class="info-value">
+            มหาวิทยาลัยเกษตรศาสตร์
+            <br>
+            วิทยาเขตกำแพงแสน
+          </span>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            คณะ
+          </span>
+
+          <span class="info-value">
+            ศิลปศาสตร์และวิทยาศาสตร์
+          </span>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            ภาควิชา
+          </span>
+
+          <span class="info-value">
+            วิทยาการคำนวณและเทคโนโลยีดิจิทัล
+          </span>
+
+        </div>
+
+
+        <div class="info-row">
+
+          <span class="info-label">
+            สาขา
+          </span>
+
+          <span class="info-value">
+            วิทยาการคอมพิวเตอร์
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       SKILLS
+  ========================= -->
+
+  <section id="skills">
+
+    <div class="section-title">
+
+      <h2>
+        Skills
+      </h2>
+
+      <p>
+        ทักษะที่ฉันมี
+      </p>
+
+    </div>
+
+
+    <div class="skills-container">
+
+
+      <div class="skill-box">
+
+        <h3>
+          🎨 Editing & Design
+        </h3>
+
+
+        <div class="skill-list">
+
+          <div class="skill">
+            Canva
+          </div>
+
+          <div class="skill">
+            CapCut
+          </div>
+
+          <div class="skill">
+            InShot
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="skill-box">
+
+        <h3>
+          💻 Programming
+        </h3>
+
+
+        <div class="skill-list">
+
+          <div class="skill">
+            C
+          </div>
+
+          <div class="skill">
+            Java
+          </div>
+
+          <div class="skill">
+            JavaScript
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       PROJECTS
+  ========================= -->
+
+  <section
+    id="projects"
+    class="projects-section">
+
+
+    <div class="section-title">
+
+      <h2>
+        Projects
+      </h2>
+
+      <p>
+        ผลงานของฉัน
+      </p>
+
+    </div>
+
+
+    <div class="projects">
+
+
+      <div class="project-card">
+
+        <div class="project-number">
+          01
+        </div>
+
+
+        <h3>
+          Wiphada Portfolio
+        </h3>
+
+
+        <p>
+
+          เว็บไซต์ผลงานที่รวบรวมข้อมูล
+          และโปรเจกต์ที่ได้ทำระหว่างการเรียน
+          โดยเน้นการออกแบบเว็บไซต์
+          และการนำเสนอผลงาน
+
+        </p>
+
+
+        <a
+          href="https://wiphadathabpia.github.io/Wiphada-Thabpia.github.io/"
+          target="_blank"
+          class="project-link">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+
+      <div class="project-card">
+
+        <div class="project-number">
+          02
+        </div>
+
+
+        <h3>
+          My Lovely Dog
+        </h3>
+
+
+        <p>
+
+          โปรเจกต์เว็บไซต์ 3D
+          ที่นำเสนอโมเดลสุนัข
+          และการแสดงผลโมเดล
+          บนเว็บไซต์ด้วยเทคโนโลยี WebGL
+
+        </p>
+
+
+        <a
+          href="https://wiphadathabpia.github.io/Wiphada-Mydog.github.io/"
+          target="_blank"
+          class="project-link">
+
+          View Project →
+
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
+
+  <section
+    id="contact"
+    class="contact">
+
+
+    <div class="section-title">
+
+      <h2>
+        Contact
+      </h2>
+
+      <p>
+        ช่องทางการติดต่อ
+      </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+
+      <div class="contact-item">
+
+        <strong>
+          Email:
+        </strong>
+
+        wiphada.th@ku.th
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <strong>
+          Phone:
+        </strong>
+
+        099-610-0359
+
+      </div>
+
+
+      <a
+        href="index.html"
+        class="bakery-button">
+
+        ← Back to Bakery 3D
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    © 2026 Wiphada Thabpia
+    | Interactive 3D Portfolio
+
+  </footer>
+
+
+</body>
+
+</html>
